@@ -1,6 +1,6 @@
 import { Prisma } from "@prisma/client";
 import { ChevronRightIcon } from "lucide-react";
-import ProductItem from "./ProductsItem";
+import ProductItem from "./ProductItem";
 import { Button } from "./ui/button";
 
 interface ProductListProps {
