@@ -47,7 +47,7 @@ const ProductDetails = ({
     });
   };
   return (
-    <div className="py-6">
+    <div className="relative z-50 mt-[-1.5rem] bg-white py-6 rounded-tl-3xl rounded-tr-3xl ">
       <div className="flex items-center gap-2 px-5">
         <div className="relative w-6 h-6">
           <Image
