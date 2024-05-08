@@ -44,15 +44,16 @@ const Home = async () => {
       <div className="pt-6 space-y-4">
         <div className="flex justify-between items-center px-5">
           <h2 className="font-semibold">Pedidos recomendados</h2>
-          <Link href="products/recommended">
-            <Button
-              variant="ghost"
-              className="p-0 text-primary hover:bg-transparent h-fit"
-            >
+          <Button
+            variant="ghost"
+            className="p-0 text-primary hover:bg-transparent h-fit"
+            asChild
+          >
+            <Link href="products/recommended">
               ver todos
               <ChevronRightIcon size={16} />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
         <ProductsList products={products} />
       </div>
@@ -65,15 +66,15 @@ const Home = async () => {
       <div className="py-6 space-y-4">
         <div className="flex justify-between items-center px-5">
           <h2 className="font-semibold">Restaurantes recomendados</h2>
-          <Link href="/restaurants/recommended">
-            <Button
-              variant="ghost"
-              className="p-0 text-primary hover:bg-transparent h-fit"
-            >
+          <Button
+            variant="ghost"
+            className="p-0 text-primary hover:bg-transparent h-fit"
+          >
+            <Link href="/restaurants/recommended">
               ver todos
               <ChevronRightIcon size={16} />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
         <RestaurantsList />
       </div>
